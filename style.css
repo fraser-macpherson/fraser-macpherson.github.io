@@ -1,0 +1,291 @@
+/* ========================================
+   CSS Variables & Reset
+======================================== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --sky-top: #e8f4f8;
+  --sky-mid: #b8dff0;
+  --wave-1: #1a7ab5;
+  --wave-2: #155f8f;
+  --wave-3: #0d3f63;
+  --accent: #5ec4f0;
+  --text-dark: #0d2d42;
+  --text-light: #ffffff;
+  --btn-bg: rgba(255, 255, 255, 0.15);
+  --btn-border: rgba(255, 255, 255, 0.6);
+  --btn-hover: rgba(255, 255, 255, 0.3);
+}
+
+html, body {
+  height: 100%;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  background: var(--sky-top);
+}
+
+/* ========================================
+   Hero Section
+======================================== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background: linear-gradient(
+    180deg,
+    #f0f9ff 0%,
+    #c8e9f7 40%,
+    #a0d4ee 70%,
+    #6db8e0 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* ========================================
+   Hero Text Content
+======================================== */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 8vh;
+  animation: fadeDown 1s ease both;
+}
+
+.hero-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+  animation: fadeDown 0.9s ease 0.1s both;
+}
+
+.hero-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: clamp(3.5rem, 10vw, 7rem);
+  color: var(--text-dark);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  animation: fadeDown 0.9s ease 0.2s both;
+}
+
+.hero-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  opacity: 0.55;
+  margin-top: 0.75rem;
+  animation: fadeDown 0.9s ease 0.3s both;
+}
+
+/* ========================================
+   Wave Container
+======================================== */
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* ========================================
+   SVG Waves
+======================================== */
+.waves-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wave {
+  animation: waveDrift 8s ease-in-out infinite alternate;
+  transform-origin: center bottom;
+}
+
+.wave-1 {
+  fill: var(--wave-1);
+  animation-duration: 10s;
+  animation-delay: 0s;
+}
+
+.wave-2 {
+  fill: var(--wave-2);
+  animation-duration: 8s;
+  animation-delay: -2s;
+}
+
+.wave-3 {
+  fill: var(--wave-3);
+  animation-duration: 6s;
+  animation-delay: -1s;
+}
+
+/* ========================================
+   Navigation Bar
+======================================== */
+.navbar {
+  position: absolute;
+  bottom: 42%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  animation: fadeUp 1s ease 0.5s both;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50px;
+  padding: 0.6rem 1.2rem;
+  box-shadow: 0 8px 32px rgba(13, 63, 99, 0.2);
+}
+
+.nav-links li a {
+  display: block;
+  padding: 0.5rem 1.4rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  text-decoration: none;
+  border-radius: 40px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.nav-links li a:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* ========================================
+   Project Redirect Buttons
+======================================== */
+.project-buttons {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.2rem;
+  z-index: 10;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeUp 1s ease 0.7s both;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.8rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  text-decoration: none;
+  background: var(--btn-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1.5px solid var(--btn-border);
+  border-radius: 6px;
+  min-width: 140px;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-btn:hover {
+  background: var(--btn-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   Animations
+======================================== */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes waveDrift {
+  0% {
+    d: path("M0,280 C80,230 160,180 260,160 C360,140 400,200 500,170 C600,140 650,80 750,100 C850,120 900,200 1000,180 C1100,160 1200,130 1300,150 C1370,165 1410,190 1440,200 L1440,420 L0,420 Z");
+  }
+  100% {
+    d: path("M0,270 C80,240 160,190 270,175 C370,155 420,210 510,180 C610,150 660,90 760,108 C860,128 910,205 1010,185 C1110,165 1210,138 1310,158 C1380,170 1415,195 1440,205 L1440,420 L0,420 Z");
+  }
+}
+
+/* ========================================
+   Responsive
+======================================== */
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 0;
+    padding: 0.5rem 0.6rem;
+  }
+
+  .nav-links li a {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .project-buttons {
+    gap: 0.7rem;
+  }
+
+  .project-btn {
+    min-width: 100px;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.75rem;
+  }
+}
