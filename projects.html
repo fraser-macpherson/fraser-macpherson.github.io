@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="inner-page">
+
+  <!-- ── Fixed Header ── -->
+  <header class="site-header">
+    <a href="index.html" class="site-logo">Your Name</a>
+    <nav>
+      <ul class="nav-links nav-links--dark">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="nav-active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── Page Hero ── -->
+  <section class="inner-hero">
+    <div class="inner-hero-content">
+      <span class="page-eyebrow">My Work</span>
+      <h1 class="page-title">Projects</h1>
+      <p class="page-subtitle">A collection of things I've built, designed, and explored.</p>
+    </div>
+    <div class="inner-wave-divider">
+      <svg viewBox="0 0 1440 130" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="wave wave-1" d="M0,60 C240,110 480,20 720,60 C960,100 1200,30 1440,60 L1440,130 L0,130 Z"/>
+        <path class="wave wave-2" d="M0,85 C200,65 420,110 660,88 C900,66 1140,105 1440,88 L1440,130 L0,130 Z"/>
+        <path class="wave wave-3" d="M0,105 C180,95 380,118 620,106 C860,94 1100,115 1440,106 L1440,130 L0,130 Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ── Projects Grid ── -->
+  <main class="projects-main">
+
+    <!-- Filter Tabs -->
+    <div class="filter-bar">
+      <button class="filter-btn filter-btn--active" onclick="filterProjects('all', this)">All</button>
+      <button class="filter-btn" onclick="filterProjects('web', this)">Web</button>
+      <button class="filter-btn" onclick="filterProjects('design', this)">Design</button>
+      <button class="filter-btn" onclick="filterProjects('other', this)">Other</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Card 1 -->
+      <article class="project-card" data-category="web">
+        <div class="card-image-placeholder">
+          <span>Preview</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">Web</span>
+            <span class="card-tag">JavaScript</span>
+          </div>
+          <h2 class="card-title">Project One</h2>
+          <p class="card-desc">A brief description of what this project does and the problem it solves. Keep it concise and engaging.</p>
+          <a href="project.html" class="card-link">
+            View Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="project-card" data-category="design">
+        <div class="card-image-placeholder">
+          <span>Preview</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">Design</span>
+            <span class="card-tag">Figma</span>
+          </div>
+          <h2 class="card-title">Project Two</h2>
+          <p class="card-desc">A brief description of what this project does and the problem it solves. Keep it concise and engaging.</p>
+          <a href="project.html" class="card-link">
+            View Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="project-card" data-category="web">
+        <div class="card-image-placeholder">
+          <span>Preview</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">Web</span>
+            <span class="card-tag">CSS</span>
+          </div>
+          <h2 class="card-title">Project Three</h2>
+          <p class="card-desc">A brief description of what this project does and the problem it solves. Keep it concise and engaging.</p>
+          <a href="project.html" class="card-link">
+            View Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="project-card" data-category="other">
+        <div class="card-image-placeholder">
+          <span>Preview</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">Other</span>
+          </div>
+          <h2 class="card-title">Project Four</h2>
+          <p class="card-desc">A brief description of what this project does and the problem it solves. Keep it concise and engaging.</p>
+          <a href="project.html" class="card-link">
+            View Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="project-card" data-category="design">
+        <div class="card-image-placeholder">
+          <span>Preview</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">Design</span>
+            <span class="card-tag">Branding</span>
+          </div>
+          <h2 class="card-title">Project Five</h2>
+          <p class="card-desc">A brief description of what this project does and the problem it solves. Keep it concise and engaging.</p>
+          <a href="project.html" class="card-link">
+            View Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="project-card" data-category="web">
+        <div class="card-image-placeholder">
+          <span>Preview</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">Web</span>
+            <span class="card-tag">React</span>
+          </div>
+          <h2 class="card-title">Project Six</h2>
+          <p class="card-desc">A brief description of what this project does and the problem it solves. Keep it concise and engaging.</p>
+          <a href="project.html" class="card-link">
+            View Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="var(--wave-3)" d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,35 1440,40 L1440,80 L0,80 Z"/>
+      </svg>
+    </div>
+    <div class="footer-inner">
+      <p class="footer-name">Your Name</p>
+      <nav class="footer-nav">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    function filterProjects(category, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('filter-btn--active'));
+      btn.classList.add('filter-btn--active');
+      document.querySelectorAll('.project-card').forEach(card => {
+        const show = category === 'all' || card.dataset.category === category;
+        card.style.opacity = show ? '1' : '0.2';
+        card.style.pointerEvents = show ? 'auto' : 'none';
+        card.style.transform = show ? 'scale(1)' : 'scale(0.97)';
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Title — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="project-page">
+
+  <!-- ── Top Navigation ── -->
+  <header class="project-header">
+    <a href="index.html" class="back-link">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      Back to Portfolio
+    </a>
+    <nav>
+      <ul class="nav-links nav-links--dark">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── Project Hero ── -->
+  <section class="project-hero">
+    <div class="project-hero-content">
+      <span class="project-tag">Project — 2024</span>
+      <h1 class="project-title">Project Title</h1>
+      <p class="project-tagline">A one-line description of what this project is about.</p>
+      <a href="#" target="_blank" rel="noopener" class="cta-btn">
+        View Project
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Wave divider at bottom of hero -->
+    <div class="project-wave-divider">
+      <svg viewBox="0 0 1440 160" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="wave wave-2" d="M0,80 C200,120 400,40 600,80 C800,120 1000,50 1200,80 C1320,96 1390,100 1440,95 L1440,160 L0,160 Z"/>
+        <path class="wave wave-3" d="M0,110 C180,90 360,130 560,110 C760,90 960,130 1160,108 C1300,92 1380,105 1440,112 L1440,160 L0,160 Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ── Project Detail Body ── -->
+  <main class="project-body">
+
+    <!-- Meta chips -->
+    <div class="project-meta">
+      <div class="meta-chip">
+        <span class="meta-label">Type</span>
+        <span class="meta-value">Web Application</span>
+      </div>
+      <div class="meta-chip">
+        <span class="meta-label">Stack</span>
+        <span class="meta-value">HTML · CSS · JavaScript</span>
+      </div>
+      <div class="meta-chip">
+        <span class="meta-label">Year</span>
+        <span class="meta-value">2024</span>
+      </div>
+      <div class="meta-chip">
+        <span class="meta-label">Status</span>
+        <span class="meta-value">Completed</span>
+      </div>
+    </div>
+
+    <!-- Project image placeholder -->
+    <div class="project-image-placeholder">
+      <span>Project Screenshot / Preview</span>
+    </div>
+
+    <!-- Description sections -->
+    <div class="project-sections">
+
+      <section class="project-section">
+        <h2 class="section-heading">Overview</h2>
+        <p class="section-text">
+          Provide a high-level overview of the project here. Describe what it is, who it's for, and what problem it solves. This should give a reader a clear understanding of the project's purpose in a few sentences.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2 class="section-heading">The Challenge</h2>
+        <p class="section-text">
+          Describe the core challenge or problem you were trying to solve. What constraints or requirements shaped your approach? What made this project interesting or difficult?
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2 class="section-heading">My Approach</h2>
+        <p class="section-text">
+          Walk through how you tackled the problem. Highlight key decisions, tools, or techniques you used. This is a great place to demonstrate your thought process and technical depth.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2 class="section-heading">Outcome</h2>
+        <p class="section-text">
+          Summarise the result. What did you achieve? Include any metrics, feedback, or impact if relevant. What would you do differently next time?
+        </p>
+      </section>
+
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="project-cta-banner">
+      <div class="cta-banner-wave">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill="var(--wave-2)" d="M0,40 C300,80 600,0 900,40 C1100,65 1300,30 1440,40 L1440,0 L0,0 Z"/>
+        </svg>
+      </div>
+      <div class="cta-banner-content">
+        <p class="cta-banner-label">Ready to see it live?</p>
+        <h3 class="cta-banner-heading">View the full project</h3>
+        <a href="#" target="_blank" rel="noopener" class="cta-btn cta-btn--light">
+          Open Project
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="project-footer">
+    <a href="index.html" class="footer-back">← Back to Portfolio</a>
+    <p class="footer-name">Your Name</p>
+  </footer>
+
+</body>
+</html>
