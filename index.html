@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fraser MacPherson — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body id="top">
+
+  <!-- ── Fixed header, fades in once the hero has been scrolled past ── -->
+  <header class="page-header" id="pageHeader">
+    <a href="#top" class="site-logo">Fraser MacPherson</a>
+    <nav>
+      <ul class="nav-links nav-links--dark">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── Hero Section ── -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Welcome to my</p>
+      <h1 class="hero-name">Fraser MacPherson</h1>
+      <p class="hero-subtitle">Portfolio</p>
+    </div>
+
+    <!-- Animated Wave Landscape -->
+    <div class="wave-container">
+      <svg class="waves-svg" viewBox="0 0 1440 420" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Back mountain range -->
+        <path class="wave wave-1" d="M0,280 C80,230 160,180 260,160 C360,140 400,200 500,170 C600,140 650,80 750,100 C850,120 900,200 1000,180 C1100,160 1200,130 1300,150 C1370,165 1410,190 1440,200 L1440,420 L0,420 Z"/>
+        <!-- Mid mountain range -->
+        <path class="wave wave-2" d="M0,320 C60,290 130,260 220,240 C310,220 370,260 460,245 C560,228 610,190 700,210 C790,230 840,270 940,255 C1040,240 1110,210 1200,225 C1300,242 1380,270 1440,280 L1440,420 L0,420 Z"/>
+        <!-- Front wave -->
+        <path class="wave wave-3" d="M0,360 C100,340 200,310 320,320 C440,330 500,350 620,340 C740,330 800,310 920,325 C1040,340 1120,360 1240,350 C1340,342 1400,335 1440,338 L1440,420 L0,420 Z"/>
+      </svg>
+
+      <!-- Nav pill overlaid on the waves — scrolls to sections on this page -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ── About Section ── -->
+  <section class="about-section" id="about">
+    <main class="about-main">
+
+      <!-- Intro Split -->
+      <section class="about-intro">
+        <div class="about-photo-placeholder">
+          <span>Photo</span>
+        </div>
+        <div class="about-intro-text">
+          <h2 class="about-heading">Hi, I'm <em>Fraser MacPherson</em></h2>
+          <p>I'm a Computing Science Student based in [city/university], passionate about creating thoughtful digital experiences. I love the intersection of design and technology — where aesthetics meet function.</p>
+          <p>[Add a couple more sentences here about what you're currently focused on, what excites you about the field, or what you're looking for next.]</p>
+          <a href="#projects" class="cta-btn" style="margin-top:1.5rem; display:inline-flex;">
+            View My Work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Wave separator -->
+      <div class="about-wave-sep">
+        <svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill="var(--wave-3)" d="M0,45 C360,90 720,0 1080,45 C1260,67 1380,40 1440,45 L1440,90 L0,90 Z"/>
+        </svg>
+      </div>
+
+      <!-- Skills & Education (dark section) -->
+      <section class="about-dark" id="skills-education">
+
+        <div class="about-skills-grid">
+          <div class="skills-col">
+            <h3 class="skills-heading">Skills</h3>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <span class="skill-name">HTML &amp; CSS</span>
+                <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">PHP</span>
+                <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Design</span>
+                <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="timeline-col">
+            <h3 class="skills-heading">Education</h3>
+            <ol class="timeline">
+              <li class="timeline-item">
+                <span class="timeline-date">2023 – Present</span>
+                <h4 class="timeline-role">University Student</h4>
+                <p class="timeline-org">[Uni Name]</p>
+                <p class="timeline-desc">[Add a short description here — course, focus areas, or achievements.]</p>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-date">2018 – 2023</span>
+                <h4 class="timeline-role">Previous Education</h4>
+                <p class="timeline-org">[High School]</p>
+                <p class="timeline-desc">[Add a short description here — subjects, achievements, or relevant activities.]</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+  </section>
+
+  <!-- ── Projects Heading Band ── -->
+  <div class="section-divider-band">
+    <h2 class="divider-title">Projects</h2>
+  </div>
+
+  <!-- ── Projects Section ── -->
+  <section class="projects-section" id="projects">
+    <div class="projects-grid">
+
+      <!-- Card 1 -->
+      <article class="project-card" data-category="web">
+        <div class="card-image-placeholder">
+          <span>Preview</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">Web</span>
+            <span class="card-tag">JavaScript</span>
+          </div>
+          <h2 class="card-title">Project One</h2>
+          <p class="card-desc">A brief description of what this project does and the problem it solves. Keep it concise and engaging.</p>
+          <!-- Replace the # below with the live link, GitHub repo, or case study for this project -->
+          <a href="#" target="_blank" rel="noopener" class="card-link">
+            View Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="project-card" data-category="design">
+        <div class="card-image-placeholder">
+          <span>Preview</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">Design</span>
+            <span class="card-tag">Figma</span>
+          </div>
+          <h2 class="card-title">Project Two</h2>
+          <p class="card-desc">A brief description of what this project does and the problem it solves. Keep it concise and engaging.</p>
+          <!-- Replace the # below with the live link, GitHub repo, or case study for this project -->
+          <a href="#" target="_blank" rel="noopener" class="card-link">
+            View Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="project-card" data-category="web">
+        <div class="card-image-placeholder">
+          <span>Preview</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">Web</span>
+            <span class="card-tag">CSS</span>
+          </div>
+          <h2 class="card-title">Project Three</h2>
+          <p class="card-desc">A brief description of what this project does and the problem it solves. Keep it concise and engaging.</p>
+          <!-- Replace the # below with the live link, GitHub repo, or case study for this project -->
+          <a href="#" target="_blank" rel="noopener" class="card-link">
+            View Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="var(--wave-3)" d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,35 1440,40 L1440,80 L0,80 Z"/>
+      </svg>
+    </div>
+    <div class="footer-inner">
+      <p class="footer-name">Fraser MacPherson</p>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:hello@yourname.com">hello@yourname.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Show the fixed header once the hero has been scrolled past
+    const pageHeader = document.getElementById('pageHeader');
+    const heroHeight = () => document.querySelector('.hero').offsetHeight;
+
+    function toggleHeader() {
+      if (window.scrollY > heroHeight() * 0.6) {
+        pageHeader.classList.add('is-visible');
+      } else {
+        pageHeader.classList.remove('is-visible');
+      }
+    }
+    window.addEventListener('scroll', toggleHeader, { passive: true });
+    window.addEventListener('resize', toggleHeader);
+    toggleHeader();
+  </script>
+
+</body>
+</html>
