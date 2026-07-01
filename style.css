@@ -1100,7 +1100,7 @@ a.contact-detail-value:hover { color: var(--accent); }
   font-size: clamp(2rem, 5vw, 2.8rem);
   color: rgb(255, 255, 255);
   background: rgba(21, 95, 143, 0.08);
-  border: 1px solid rgba(21, 95, 143, 0.15);
+  border: 1px solid rgb(42, 86, 118);
   padding: 0.6rem 2.2rem;
   border-radius: 8px;
 }
