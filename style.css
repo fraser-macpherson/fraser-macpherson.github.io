@@ -1088,7 +1088,7 @@ a.contact-detail-value:hover { color: var(--accent); }
    dark skills/education block and the dark project cards block —
    mirrors the light strip in the reference screenshot. */
 .section-divider-band {
-  background: #f0f9ff;
+  background: #0D3F63;
   display: flex;
   align-items: center;
   justify-content: center;
