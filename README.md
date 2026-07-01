@@ -1,6 +1,13 @@
 # fraser-macpherson.github.io
 
-## Digital Portfolio
+## Files
 
-- `index.html`
-- `style.css`
+- `index.html` Digital Portfolio
+- `style.css` Design
+
+## About Me
+- Includes information
+- Skills
+
+## Projects
+- Links to previous projects
