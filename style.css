@@ -675,6 +675,16 @@ html {
   text-transform: uppercase;
 }
 
+.card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* 1920 x 1080 ratio */
+  object-fit: cover;      /* fills the frame, crops instead of stretching */
+  object-position: center top;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+}
+
 .card-body { padding: 1.4rem 1.6rem 1.8rem; }
 
 .card-tags {
