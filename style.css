@@ -1157,7 +1157,7 @@ a.contact-detail-value:hover { color: var(--accent); }
 ============================================================ */
 @media (max-width: 900px) {
   .about-intro { grid-template-columns: 1fr; }
-  .about-photo-placeholder { max-width: 240px; aspect-ratio: 1; border-radius: 50%; margin: 0 auto; }
+  .about-photo-placeholder { max-width: 240px; aspect-ratio: 1; border-radius: 12px; margin: 0 auto; }
   .about-intro-text { text-align: center; align-items: center; }
   .about-intro-body { grid-template-columns: 1fr; gap: 2rem; }
   .about-contact { max-width: 360px; width: 100%; margin: 0 auto; }
