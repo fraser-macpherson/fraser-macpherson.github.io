@@ -407,7 +407,7 @@ html {
 }
 .footer-wave svg {
   width: 100%;
-  height: 80px;
+  height: 180px;
   display: block;
 }
 
@@ -749,12 +749,20 @@ html {
 .about-intro {
   display: grid;
   grid-template-columns: 260px 1fr;
-  gap: 3.5rem;
-  align-items: start;
-  max-width: 900px;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 4rem 2rem 3rem;
   animation: fadeIn 0.8s ease 0.2s both;
+}
+
+/* Text + Contact share one row height so their tops and bottoms line up */
+.about-intro-body {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem;
+  align-items: stretch;
 }
 
 .about-photo-placeholder {
@@ -1085,7 +1093,7 @@ a.contact-detail-value:hover { color: var(--accent); }
 }
 
 /* Section scroll offset so anchored jumps clear the fixed header */
-#about, #projects, #skills-education {
+#about, #projects, #skills-education, #contact, #experience {
   scroll-margin-top: 90px;
 }
 
@@ -1151,6 +1159,8 @@ a.contact-detail-value:hover { color: var(--accent); }
   .about-intro { grid-template-columns: 1fr; }
   .about-photo-placeholder { max-width: 240px; aspect-ratio: 1; border-radius: 50%; margin: 0 auto; }
   .about-intro-text { text-align: center; align-items: center; }
+  .about-intro-body { grid-template-columns: 1fr; gap: 2rem; }
+  .about-contact { max-width: 360px; width: 100%; margin: 0 auto; }
   .about-skills-grid { grid-template-columns: 1fr; gap: 3rem; }
   .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
 }
@@ -1175,4 +1185,100 @@ a.contact-detail-value:hover { color: var(--accent); }
   .project-btn { min-width: 100px; padding: 0.55rem 1.1rem; font-size: 0.75rem; }
   .project-buttons { gap: 0.7rem; }
   .socials-row { gap: 0.5rem; }
+}
+
+
+/* ============================================================
+   NEW: PHOTO, CONTACT BLOCK, EXPERIENCE, TALLER FOOTER WAVE
+============================================================ */
+.about-photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+/* Contact block (About intro, right-hand side) */
+.about-contact { display: flex; flex-direction: column; gap: 0.9rem; }
+
+.about-contact-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.3rem;
+}
+
+.contact-link-btn {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1.2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--wave-3);
+  background: rgba(21, 95, 143, 0.06);
+  border: 1.5px solid rgba(21, 95, 143, 0.25);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+.contact-link-btn:hover {
+  background: var(--wave-2);
+  border-color: var(--wave-2);
+  color: var(--text-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(21, 95, 143, 0.3);
+}
+
+/* Experience section (reuses .skills-heading and .timeline styles) */
+.experience-section {
+  background: var(--wave-3);
+  padding: 1rem 2rem 4rem;
+}
+.experience-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .footer-wave svg { height: 110px; }
+}
+
+
+/* ============================================================
+   DIVIDERS
+============================================================ */
+/* White waves at the bottom of the hero, leading into About */
+.hero-divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+.hero-divider svg { width: 100%; height: 110px; display: block; }
+.hero-divider-back  { fill: rgba(240, 249, 255, 0.45); }
+.hero-divider-front { fill: #f0f9ff; }
+
+/* Thin white line above the Projects title */
+.section-divider-band { position: relative; }
+.section-divider-band::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.55) 20%, rgba(255,255,255,0.55) 80%, transparent);
+}
+
+@media (max-width: 768px) {
+  .hero-divider svg { height: 70px; }
 }
